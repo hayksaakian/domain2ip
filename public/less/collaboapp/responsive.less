@@ -1,0 +1,300 @@
+@media (max-width:767px) {
+
+	.trust-video {
+		
+		iframe {
+			max-height:200px;
+		}
+		
+		.btn {
+			display: block;
+			margin-bottom: @baseLineHeight;
+		}
+	}
+	
+	.tour-page, 
+	.pricing-page,
+	.create-account {
+		
+		margin-top:0;
+		
+		*[role="main"] {
+			margin-top:0;
+		}
+		
+		header {
+			margin-top:0;
+		}
+		
+	}
+
+
+	.pricing-page {
+	
+		.pricing-table {
+			margin-top: 0;
+			padding-top:0;
+			background: @white;
+			
+			h1 {
+				color:@grayDarker;
+			}
+		}
+		
+		.mod-pricing {
+			
+			height:auto;
+			overflow: visible;
+			
+			header {
+				background:@white;
+				width:100%;
+				margin-left:0;
+				margin-top:0;
+				.border-radius(8px);
+			}
+			
+			.mod-body {
+				padding-top:@baseLineHeight;
+				text-align: center;
+			}
+			
+			ul {
+				margin-left:0;
+				list-style: none;
+			}
+			
+			p,
+			li {
+					font-size: 16px;
+					line-height: 30px;
+				}
+			
+			.btn-email {
+				margin-top:@baseLineHeight*1.75;
+			}
+			
+		}
+		
+	}
+	
+	.create-account {
+	
+		h1 {
+				
+			small {
+				float:none;
+				display: block;
+				margin-top:0;
+			}
+		}
+		
+		.create-account-form {
+		
+			input[type="password"] {
+				width:98%;
+				float:none;
+				display: block;
+				margin-right:0;
+			}
+		}
+	}
+	
+	.form-newsletter .newsletter-input {
+		width:150px;
+	}
+	
+}
+
+@media (max-width: 979px) {
+	
+	body {
+		padding-top:@navbarHeight + @baseLineHeight*2;
+	}
+	
+	.navbar {
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		margin-bottom:0;
+	}
+	
+	.navbar-inner {
+		min-height:@navbarHeight;
+		
+		.btn {
+			margin:@baseLineHeight/2 0;
+		}
+		
+		.nav > .active a {
+			.box-shadow(0 0 0 0);
+		}
+	}
+	
+	.home-icon {
+		display: none;
+	}
+	
+	.log-in {
+		border-left:none;
+	}
+	
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+	.trust-video iframe {
+		max-height:433px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	body {
+		padding-top:@navbarHeight + @baseFontSize;
+	}
+	
+	.trust-video iframe {
+		height:274px;
+	}
+	
+	.trust-explainer {
+		
+		h2 {
+			line-height: @baseFontSize*2;
+		}
+		
+		p {
+			margin-top:0;
+			margin-bottom:0;
+		}
+		
+		.btn-large {
+			padding:4px 11px;
+			font-size: 12px;
+			line-height: @baseLineHeight;
+			
+			&:first-of-type {
+				margin:@baseLineHeight/2 0;
+			}
+		}
+	}
+	
+	.pricing-page {
+		
+		padding-top:0;
+		margin-top:0;
+		
+		.pricing-table {
+		
+			background:@blue;
+			padding-top:@baseLineHeight*2 0;
+			
+		}
+		
+		.mod-pricing {
+		
+			overflow: hidden;
+			
+			header {
+				background:@white;
+				width:140%;
+				margin-left:-20%;
+				margin-top:-20%;
+				padding:@baseLineHeight 0;
+				.border-radius-top(8px);
+			}
+			
+			.mod-body {
+				padding-top:@baseLineHeight;
+				height:100%;
+			}
+			
+			ul {
+				margin-left:0;
+				list-style: none;
+			}
+			
+			p,
+			li {
+					font-size: @baseFontSize;
+					line-height: @baseLineHeight;
+				}
+			
+		}
+	
+		
+		
+	}
+	
+}
+
+@media (min-width:980px) {
+
+	.navbar {
+		color:@blueGray;
+		margin-bottom:@baseLineHeight*2;
+		
+		.navbar-inner {
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			filter:none;
+			.box-shadow(0 0 0 #000);
+			border: none;
+		}
+	}
+	
+	.navbar .nav > .active > a, 
+	.navbar .nav > .active > a:hover, 
+	.navbar .nav > .active > a:focus {
+		color:@grayDarker;
+		background-color:transparent;
+		.box-shadow(0 0 0 #000);
+		
+	}
+	
+	.navbar .nav > li > a {
+		padding-top:@baseLineHeight/6;
+		padding-bottom:@baseLineHeight/6;
+		font-weight: 400;
+		color:@blueGray;
+		text-shadow:none;
+	}
+	
+	.log-in {
+		border-left:1px solid @gray;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.trust-video iframe {
+		height:432px;
+	}
+
+	.pricing-page {
+		.mod-pricing {
+	
+			height:350px;
+			overflow: hidden;
+			
+			header {
+				background:@white;
+				width:120%;
+				margin-left:-10%;
+				margin-top:-10%;
+				padding:@baseLineHeight 0;
+				.border-radius-top(8px);
+			}
+		}
+	}
+
+	.btn-email {
+		margin-top:@baseLineHeight*1.75;
+	}
+	
+}

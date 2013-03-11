@@ -1,0 +1,93 @@
+.sign-in-page {
+	background:@grayLighter url(../img/blueprint.png) repeat;
+}
+
+.mod-sign-in {
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:360px;
+	min-height:360px;
+	margin-top:-180px;
+	margin-left:-180px;
+	background:@blueGray;
+	.box-shadow(0 0 8px @grayDark);
+	
+	.logo {
+		text-align:center;
+		margin-bottom:@baseLineHeight;
+	}
+	
+	input {
+		margin:@baseLineHeight/3 0;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		width:100%;
+		height:@baseLineHeight*2;
+	}
+	
+	[class^="icon-"] {
+		margin-right:0;
+		vertical-align: top;
+	}
+	
+	button {
+		margin-right:@baseLineHeight/2;
+	}
+	
+	.btn-large {
+		padding:11px;
+		font-size:14px;
+	}
+	
+	.forgot-form {
+		display: none;
+	}
+	
+}
+
+@media (max-width:480px) {
+	
+	.mod-sign-in {
+	left:0;
+	top:0;
+	width:100%;
+	min-height:480px;
+	margin-left:0;
+	margin-top:0;	
+	border:none;
+	.box-shadow(0 0 0 0);
+	.border-radius(0);
+	
+	input {
+		margin:@baseLineHeight/3 0;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		width:100%;
+		height:@baseLineHeight*2;
+	}
+	
+	[class^="icon-"] {
+		margin-right:0;
+		vertical-align: top;
+	}
+	
+	button {
+		margin:@baseLineHeight @baseLineHeight/2 @baseLineHeight 0;
+		font-size: 12px;
+		
+	}
+	
+	.forgot-form {
+		display: none;
+	}
+	
+}
+	
+}

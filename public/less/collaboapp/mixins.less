@@ -1,0 +1,25 @@
+.desaturate(@percentage) {
+	-webkit-filter:grayscale(@percentage);
+	-moz-filter:grayscale(@percentage);
+	-ms-filter:grayscale(@percentage);
+	-o-filter:grayscale(@percentage);
+	filter:grayscale(@percentage);
+}
+
+.border-radius-top(@size) {
+	-webkit-border-top-right-radius: @size;
+	-webkit-border-top-left-radius: @size;
+	-moz-border-radius-topleft: @size;
+	-moz-border-radius-topright: @size;
+	border-top-left-radius: @size;
+	border-top-right-radius: @size;
+}
+
+.border-radius-bottom(@size) {
+	-webkit-border-bottom-right-radius: @size;
+	-webkit-border-bottom-left-radius: @size;
+	-moz-border-radius-bottomleft: @size;
+	-moz-border-radius-bottomright: @size;
+	border-bottom-left-radius: @size;
+	border-bottom-right-radius: @size;
+}
