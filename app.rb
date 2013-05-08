@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/cross_origin'
 require 'socket'
 
 get '/' do 
@@ -7,6 +8,7 @@ get '/' do
 end
 
 get /\/.*/ do
+	cross_origin
 	domain = env['REQUEST_PATH'][1..-1]
 	ip = ""
 	re1='.*?'	# Non-greedy match on filler
