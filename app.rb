@@ -25,6 +25,8 @@ get /\/.*/ do
 	  rescue SocketError => e
 	  	retval << "error: #{e}"
 	  end
+	else
+		retval << "error: no fully qualified domain name found in request"
 	end
 	retval
 end
