@@ -27,6 +27,7 @@ get /\/.*/ do
 	  end
 		retval
 	else
-		not_found { "error: no fully qualified domain name found in request" }
+		status 404
+		body "error: no fully qualified domain name found in request"
 	end
 end
