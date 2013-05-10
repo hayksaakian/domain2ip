@@ -1,50 +1,26 @@
-# static files with sinatra on heroku!
+# Domain 2 IP
 
-### you may first need to install heroku command line tools
-```
-gem install heroku
-```
+## This site tells you the IP address of a given domain or host
 
-### login to heroku services
 ```
-heroku login
+http://domain2ip.net/google.com
 ```
 
-### if you haven't already, you'll need to set up ssh keys with heroku
+### will use Ruby to do
 ```
-heroku keys:add
-```
-
-## now, the repo!
-
-### clone this repository to get you started (if you want)
-```
-git clone git@github.com:sethvincent/sinatra-skeleton-heroku-static-pages-example.git
+IPSocket.getaddress("google.com")
 ```
 
-### make and commit your changes
+### and should return something like:
 ```
-git add .  
-git commit -m 'stuff'
+173.194.33.4
 ```
+-----
+## More examples:
+1. [http://domain2ip.net/http://apple.com]("http://domain2ip.net/http://apple.com")
+2. [http://domain2ip.net/http://microsoft.com]("http://domain2ip.net/http://microsoft.com")
+3. [http://domain2ip.net/http://amazon.com]("http://domain2ip.net/http://amazon.com")
+-----
+by [Hayk Saakian](http://twitter.com/hayksaakian)
 
-### when you're ready, create a site on heroku
-```
-heroku create
-```
-
-### if you want to run your app on heroku's cedar stack do this:  
-```
-heroku create --stack cedar  
-```
-
-### this creates a remote repo that you can push to
-```
-git push heroku master
-```
-
-## done!
-
-
-That should be all it takes to use sinatra on heroku to serve static files.  
-This example includes the skeleton css framework in the public folder to help you out if you're starting from scratch.   
+pull requests are welcome.
