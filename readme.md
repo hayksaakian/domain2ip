@@ -20,6 +20,7 @@ IPSocket.getaddress("google.com")
 1. [http://domain2ip.net/http://apple.com]("http://domain2ip.net/http://apple.com")
 2. [http://domain2ip.net/http://microsoft.com]("http://domain2ip.net/http://microsoft.com")
 3. [http://domain2ip.net/http://amazon.com]("http://domain2ip.net/http://amazon.com")
+
 -----
 by [Hayk Saakian](http://twitter.com/hayksaakian)
 
