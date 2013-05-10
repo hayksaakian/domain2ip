@@ -2,12 +2,17 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/cross_origin'
 require 'socket'
+require 'rack/throttle'
+
+use Rack::Throttle::Interval, :min => 1.0
 
 get '/' do 
-  redirect '/index.html'
+	send_file File.join(settings.public_folder, 'index.html')
 end
 
 get /\/.*/ do
+	# 1 hr cache
+  cache_control :public, :max_age => 3600
 	cross_origin
 	domain = env['REQUEST_PATH'][1..-1]
 	ip = ""
